@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tryout</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="bs-example">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a href="#" class="navbar-brand">
+                    <img src="#" height="80" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="tryout.html" class="nav-item nav-link active">Try</a>
+                        <a href="payment.html" class="nav-item nav-link">Subscriptions</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+            <div>
+                <select id="MoneyType">
+                <div class="form-group col">
+                  <label for="exampleoptionEmail1">Your currency</label>
+                  <div class="form-check col col">
+                    <option class="form-check-option"  name="exampleRadios1" id="exampleRadios" value="EUR">
+                    <label class="form-check-label" for="exampleRadios1">
+                      EUR "default"
+                    </label>
+                  </div>
+                  <div class="form-check col">
+                    <option class="form-check-option"  name="exampleRadios2" id="exampleRadios" value="USD">
+                    <label class="form-check-label" for="exampleRadios2">
+                      USD
+                    </label>
+                  </div>
+                  <div class="form-check col">
+                    <option class="form-check-option"  name="exampleRadios3" id="exampleRadios" value="CAD">
+                    <label class="form-check-label" for="exampleRadios3">
+                      CAD
+                    </label>
+                  </div>
+                
+                  <div class="form-check col">
+                    <option class="form-check-option"  name="exampleRadios4" id="exampleRadios" value="DKK" >
+                    <label class="form-check-label" for="exampleRadios4">
+                      DKK
+                    </label>
+                  </div>
+                     
+                  <div class="form-check col">
+                    <option class="form-check-option"  name="exampleRadios5" id="exampleRadios" value="AUD" >
+                    <label class="form-check-label" for="exampleRadios5">
+                      AUD
+                    </label>
+                  </div>
+                    
+                      <div class="form-check col">
+                        <option class="form-check-option"  name="exampleRadios6" id="exampleRadios" value="JPY" >
+                        <label class="form-check-label" for="exampleRadios6">
+                          JPY
+                        </label>
+                      </div>
+                    
+                      <div class="form-check col">
+                        <option class="form-check-option"  name="exampleRadios7" id="exampleRadios" value="BGN" >
+                        <label class="form-check-label" for="exampleRadios7">
+                          BGN
+                        </label>
+                      </div>
+                      
+                      <div class="form-check col">
+                        <option class="form-check-option"  name="exampleRadios8" id="exampleRadios" value="CNY" >
+                        <label class="form-check-label" for="exampleRadios8">
+                          CNY
+                        </label>
+                      </div>
+                      
+                      <div class="form-check col">
+                        <option class="form-check-option"  name="exampleRadios9" id="exampleRadios" value="MYR" >
+                        <label class="form-check-label" for="exampleRadios9">
+                          MYR
+                        </label>
+                      </div>
+                      </select>
+
+                  <button class="btn btn-primary" id="BTNs" onmouseup="determine()">Submit</button>
+                </div>
+              </div>
+              <div class="row justify-content-around">
+              <div class="card col-md-6">
+                  <h1 class="text-center">Rates Shown Below</h1>
+              </div>
+              </div>
+              <div class="row justify-content-around text-center">
+                <div class="card col-md-6">
+                    <h2 class="text-center">Current currency</h2>
+                    <p><strong id="currentNOW"></strong></p>
+                </div>
+              </div>
+              <div class="row justify-content-around">
+              <div class="card col-md-5">
+                  <P id="name1"></P>
+                  <input type="text"id="CU1"> 
+                  <p id="name2"></p>
+                  <input type="text" id="CU2">
+                  <p id="name3"></p>
+                  <input type="text"id="CU3"> 
+                  <p id="name4"></p>
+                  <input type="text"id="CU4"> 
+                  <p id="name5"></p>
+                  <input type="text"id="CU5"> 
+                  <p id="name6"></p>
+                  <input type="text"id="CU6"> 
+                  <p id="name7"></p>
+                  <input type="text"id="CU7"> 
+                  <p id="name8"></p>
+                  <input type="text"id="CU8"> 
+              </div>
+              </div>
+            </div>
+
+
+              <script src="javaScript/rates.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </body>
+</html>

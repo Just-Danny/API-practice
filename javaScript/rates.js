@@ -6,12 +6,11 @@ xhrRates.open('GET',x);
 
 xhrRates.send();
 function determine(){
-    if(document.getElementById("exampleRadios").value = "EUR"){
+    if(document.getElementById("MoneyType").value == "EUR"){
         x='https://api.exchangeratesapi.io/latest';
     const data = JSON.parse(xhrRates.response);
     console.log(data);
-    var t=data.rates+document.getElementById("exampleRadios").value;
-    console.log(t);
+    
     console.log(data.base);
     document.getElementById("name1").innerHTML= "AUD: ";
     document.getElementById("name2").innerHTML= "BGN: ";
@@ -32,10 +31,10 @@ function determine(){
     document.getElementById("CU8").value= data.rates.USD;
     document.getElementById("currentNOW").innerHTML= data.base;
     }
-    else if(document.getElementById("exampleRadios").value = "USD"){
+    else if(document.getElementById("MoneyType").value == "USD"){
         x ='https://api.exchangeratesapi.io/latest?base=USD';
         const data = JSON.parse(xhrRates.response);
-        console.log(data);
+        console.log("123"+data);
         console.log(data.rates.AUD);
         console.log(data.base);
         document.getElementById("name1").innerHTML= "AUD: ";

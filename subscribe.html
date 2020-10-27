@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Home Page</title>
+        <title>Subscriptions</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <style>
-        .header{
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-        }
-        .active{
+            .header{
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+            .active{
                 color: rgb(43, 46, 211) !important;
             }
         </style>
@@ -28,41 +28,53 @@
         
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="tryout.html" class="nav-item nav-link">Try</a>
-                        <a href="subscribe.html" class="nav-item nav-link">Subscriptions</a>
+                        <a href="subscribe.html" class="nav-item nav-link active">Subscriptions</a>
                     </div>
                 </div>
             </nav>
-
-            <div class="container-fluid justify-content-around" >
+            <div class="container-fluid">
                 <div class="row justify-content-around">
-                    <div class="card col-md-6 header">
-                        <h1 class="text-center">Welcome to Exchange Buddy!</h1>
+                    <div class=" row card col-md-6 header">
+                        <h1 class="text-center">Subscription Options</h1>
                     </div>
-                    </div>
-                    <div class="row justify-content-around text-center">
-                        <div class="col-md-6 bg-light">
-                        <h2 class="text-center">What is Exchange Buddy?</h2>
+                </div>
+                <div class="row justify-content-around text-center">
+                    <div class="col-md-3 card">
+                        <h1>Daily</h1>
                         <br>
-                            <p>Exchange buddy is a service that provides customoers with the latest exchange rates for currency. It uses an open source API that was published by European Central Bank to collect exchange rates ranging from today and other time periods.</p>
-                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">Daily Updates</li>
+                            <li class="list-group-item">Access to all features</li>
+                            <li class="list-group-item">5$ per month</li>
+                        </ul>
+                        <br>
                     </div>
-                    <div class="row justify-content-around text-center">
-                        <div class="col-md-6 bg-light ">
-                            <h2 class="text-center">Why use Exchange Buddy?</h2>
-                            <br>
-                            <ul class="list-group">
-                                <li class="list-group-item">Fast and Reliable</li>
-                                <li class="list-group-item">Exchange rates sent directly to you</li>
-                                <li class="list-group-item">Access to lates Rates</li>
-                                <li class="list-group-item">Ability to directly compare two currencies rates to each other</li>
-                                <li class="list-group-item">And much more!</li>
-                              </ul>
-                              <br>
-                        </div>
+                    <div class="col-md-3 card">
+                        <h1>Weekly</h1>
+                        <br>
+                        <ul class="list-group">
+                            <li class="list-group-item">Weekly Updates</li>
+                            <li class="list-group-item">Access to most features</li>
+                            <li class="list-group-item">10$ per month</li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="col-md-3 card">
+                        <h1>Monthly</h1>
+                        <br>
+                        <ul class="list-group">
+                            <li class="list-group-item">Monthly Updates</li>
+                            <li class="list-group-item">Access to some features</li>
+                            <li class="list-group-item">15$ per month</li>
+                        </ul>
+                        <br>
+                    </div>
+                 
                     </div>
             </div>
+
 
 
 
